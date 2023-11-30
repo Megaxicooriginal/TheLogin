@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        #content, #error {
+            display: none;
+        }
+    </style>
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var content = document.getElementById("content");
+            var error = document.getElementById("error");
+
+            if (username === "MegaXico" && password === "#XICO1122") {
+                content.style.display = "block";
+                error.style.display = "none";
+                window.location.href = "https://poopeegirls.com/v-3202-2-scat-sex-with-asian-green-haired-girl.html";
+            } else {
+                content.style.display = "none";
+                error.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="content">
+        <h2>Welcome to the site!</h2>
+        <!-- Your page content goes here -->
+    </div>
+
+    <div id="error">
+        <h2>Error</h2>
+        <p>Invalid username or password.</p>
+    </div>
+
+    <form onsubmit="event.preventDefault(); validateLogin();">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
